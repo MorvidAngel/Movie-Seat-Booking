@@ -1,5 +1,5 @@
-const container = document.quarySelector('.container');
-const seats = document.quarySelectorAll('.row .seat:not (.occupied)');
+const container = document.querySelector('.container');
+const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
@@ -12,4 +12,4 @@ container.addEventListener('click', e => {
     ) {
         e.target.classList.toggle('selected');
     }
-})
+});
